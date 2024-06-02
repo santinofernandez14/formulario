@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso de datos</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body id="body">
+    <div class="fondo"></div>
+    <section>
+        <div id="contenedor">
+             <form action="https://formspree.io/[ID del Formulario que te da Formspree]" method="POST" id="formulario" onsubmit="return validar()">
+                <h2>Ingrese sus datos</h2>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" size="20"><br><br>
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" id="apellido" size="20"><br><br>
+                <label for="gmail">Email:</label>
+                <input type="email" name="gmail" id="gmail" size="20"><br><br>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje"></textarea><br><br>
+                <pre id="parrafo"></pre>
+                <input type="submit" name="enviar" value="Enviar" id="enviar"><br><br>
+            </form>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>
